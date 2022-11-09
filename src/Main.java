@@ -12,7 +12,7 @@ public class Main {
         XMLReader procesadorXML = XMLReaderFactory.createXMLReader();
         gestionContenido gestor = new gestionContenido();
         procesadorXML.setContentHandler(gestor);
-        InputSource fileXML = new InputSource("factura-hvallve.xml");
+        InputSource fileXML = new InputSource("factura.xml");
         procesadorXML.parse(fileXML);
     }
 }
