@@ -3,25 +3,20 @@
  */
 public class Primo {
     public static void main(String[] args) {
-        if(Primo(4)) {
-            System.out.println("Primo");
-        }else {
-            System.out.println("No es primo");
-        }
-
+        esPrimo(4);
     }
 
-    public static boolean Primo(int numeroEntrat){
+    public static void esPrimo(int numeroEntrat){
 
         if(numeroEntrat == 0 || numeroEntrat == 1 || numeroEntrat == 4){
-            return false;
+            System.out.println("No es primo");
         }
 
         for (int x = 2; x < numeroEntrat / 2; x++) {
             if (numeroEntrat % x == 0)
-                return false;
+                System.out.println("No es primo");
         }
-        return true;
+        System.out.println("Es primo");
     }
 }
 
